@@ -1,0 +1,52 @@
+$background: tomato;
+$text: white;
+$breakpoint: 600em / 16;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: $background;
+	color: $text;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+}
+
+a {
+	color: $background;
+	text-decoration: none;
+	background: $text;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 75%;
+	padding: 4px 5px;
+	margin: 0 2px;
+	opacity: 0.8;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+p {
+	line-height: 150%;
+}
+
+.nobr {
+	white-space: nowrap;
+}
+
+main {
+	padding: 0 10%;
+	margin-top: 10%;
+
+	@media (min-width: $breakpoint) {
+		margin-top: 0;
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);	
+	}
+}

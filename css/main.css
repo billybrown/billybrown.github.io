@@ -1,0 +1,48 @@
+/* line 5, /Users/bill/Projects/billybrown/css/main.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 9, /Users/bill/Projects/billybrown/css/main.scss */
+body {
+  background: tomato;
+  color: white;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300; }
+
+/* line 16, /Users/bill/Projects/billybrown/css/main.scss */
+a {
+  color: tomato;
+  text-decoration: none;
+  background: white;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 75%;
+  padding: 4px 5px;
+  margin: 0 2px;
+  opacity: 0.8; }
+  /* line 28, /Users/bill/Projects/billybrown/css/main.scss */
+  a:hover {
+    opacity: 1; }
+
+/* line 33, /Users/bill/Projects/billybrown/css/main.scss */
+p {
+  line-height: 150%; }
+
+/* line 37, /Users/bill/Projects/billybrown/css/main.scss */
+.nobr {
+  white-space: nowrap; }
+
+/* line 41, /Users/bill/Projects/billybrown/css/main.scss */
+main {
+  padding: 0 10%;
+  margin-top: 10%; }
+  @media (min-width: 37.5em) {
+    main {
+      margin-top: 0;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); } }
+/*# sourceMappingURL=main.css.map */
