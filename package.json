@@ -1,29 +1,26 @@
 {
-  "name": "CameraCollection",
+  "name": "BillBrown",
   "version": "1.0.0",
-  "description": "Collection of 100 pixelated camera illustrations.",
+  "description": "Personal site",
   "main": "index.html",
   "scripts": {
     "test": "grunt"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/billybrown/cameracollection"
+    "url": "https://github.com/billybrown/billybrown.github.io"
   },
   "keywords": [
-    "pixelart",
-    "pixel",
-    "illustrations",
-    "design",
-    "8bit",
-    "free"
+    "art",
+    "front end developer",
+    "new orleans developer"
   ],
   "author": "Bill Brown",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/billybrown/cameracollection/issues"
+    "url": "https://github.com/billybrown/billybrown.github.io/issues"
   },
-  "homepage": "https://github.com/billybrown/cameracollection",
+  "homepage": "https://github.com/billybrown/billybrown.github.io",
   "engines": {
     "node": "~0.10.33"
   },
