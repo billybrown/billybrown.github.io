@@ -25,6 +25,7 @@ module.exports = function(grunt) {
   grunt.registerTask('javascript', ['jshint:custom']);
   grunt.registerTask('images', ['imagemin']);
 
+
   grunt.registerTask('build', [
     'jshint:grunt',
     'jshint:custom',
@@ -33,5 +34,8 @@ module.exports = function(grunt) {
     'autoprefixer',
     'cssmin'
   ]);
+
+  grunt.registerTask('deploy', ['build', 'gh-pages']);
+
 };
 

@@ -56,12 +56,11 @@ body {
 
 
 // this is to center content at large screens
-$cspace_small: 2vh;
-$cspace_medium: 4vh;
-$cspace_large: 10vh;
+$cspace_small: 8vw;
+$cspace_medium: 10vw;
+$cspace_large: 10vw;
 
 .u-constrained {
-  max-width: $page-max-width;
   margin-right: auto;
   margin-left: auto;
   padding-right: $cspace_small;
@@ -75,6 +74,7 @@ $cspace_large: 10vh;
   @include mq($from: highschool) {
     padding-right: $cspace_large;
     padding-left: $cspace_large;
+    max-width: $page-max-width + $cspace_large * 2;
   }
 }
 

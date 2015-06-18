@@ -56,9 +56,9 @@ $mq-static-breakpoint: masters;
 // Misc. values
 
 
-$comp-max-width: 1600px; // if working from a PSD or other static comp
-$site-max-width: 1542px;
-$page-max-width: 730px;
+$comp-max-width: 50vw; // if working from a PSD or other static comp
+$site-max-width: 50vw;
+$page-max-width: 50vw;
 
 $page-element-spacing: 2vh;
 $spacing: 20px;

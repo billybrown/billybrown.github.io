@@ -14,14 +14,33 @@
 
 .Project {
 	@extend %u-clearfix;
+	text-align: center;
+	padding-bottom: 6vh;
+
+	@include mq($from: middleschool) {
+		display: flex;
+	    //flex-direction: column;
+	    flex: 1;
+	    text-align: left;
+	    padding: 0;
+	}
 }
 
 .Project__imageGroup {
 	width: 140px;
-	float: right;
-	margin-left: 10px;
+	order: 2;
+		margin: 0 auto;
+
+	@include mq($from: middleschool) {
+		flex: 0 0 140px;
+		margin: 0;
+	}
+
 }
 
+.Project__textGroup {
+	flex: 1;
+}
 .Project__title {
 	margin-bottom: 0;
 	@extend %u-giantTitle;
