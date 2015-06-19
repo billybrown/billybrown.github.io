@@ -45,7 +45,8 @@ body {
   font-size: 15px;
   line-height: 20px;
   -webkit-font-smoothing: antialiased;
-  background: $background url("../img/bg.gif") repeat;
+  background: $background;
+  //background: $background url("../img/bg.gif") repeat;
 }
 
 
@@ -81,10 +82,15 @@ $cspace_large: 10vw;
 .PageWrapper {
   max-width: 80vw;
   margin: 0 auto;
+  position: relative;
+  z-index: 100;
+  background: rgba(255,255,255,.8);
 
   @include mq($from: college) {
-    max-width: 40vw;
-    margin-left: 50vw
+    width: 50vw;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: 10vw;
   }
 }
 

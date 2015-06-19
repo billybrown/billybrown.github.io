@@ -2,23 +2,6 @@
 
 module.exports.tasks = {
 
-	jshint: {
-		options: {
-			enforceall: true,
-			nocomma: false
-		},
-		grunt: {
-		    options: {
-		      node: true,
-		      camelcase: false
-		    },
-	  		files: {
-	  			src: ['Gruntfile.js', 'config/*.js']
-	  		}
-	  	},
-	  	custom: ['js/*.js']
-	},
-
     bower_concat: {
         all: {
             dest: 'build/js/plugins.js',
