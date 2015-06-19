@@ -1,0 +1,70 @@
+// Bill
+
+$bill: 20px;
+$bill-width: $bill;
+$bill-height: $bill;
+
+.Bill {
+	height: 100vh;
+	width: 50vw;
+	position: fixed;
+	bottom: 0;
+	left: 10vw;
+
+	.Shirt {
+		background: #ccff97;
+	}
+
+	.Hair {
+		background: #ce2811;
+	}
+
+	.Face,
+	.RightArm,
+	.LeftArm {
+		background: #e5c7a1;
+	}
+
+	.Tie {
+		background: #516872;
+	}
+
+	.Belt,
+	.Shoe {
+		background: #302517;
+	}
+
+	.Pants {
+		background: #a09087;
+	}
+
+	.is-shadow {
+		@extend %u-overlayDark;
+	}
+
+}
+
+.Bill div {
+	width: $bill-width;
+	height: $bill-height;
+	position: absolute;
+	opacity: 1;
+	transition: all 2s ease;
+
+	&.is-off {
+		opacity: 0;
+	}
+}
+
+@for $i from 1 through 200 {
+  .Bill.is-off div:nth-child(#{$i}) { 
+    bottom: random(1000) + px !important;
+    left: random(1000) + px !important;
+  }
+}
+
+
+
+// hair
+
+

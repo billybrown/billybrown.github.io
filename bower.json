@@ -1,0 +1,23 @@
+{
+  "name": "billybrown",
+  "version": "0.0.0",
+  "homepage": "https://github.com/billybrown/billybrown",
+  "authors": [
+    "Bill Brown <bill@echo.co>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  },
+  "devDependencies": {
+    "modernizr": "~2.8.3",
+    "jquery": "~2.1.4"
+  }
+}

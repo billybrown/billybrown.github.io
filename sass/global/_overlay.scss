@@ -7,7 +7,6 @@
 
 // base overlay placeholder
 %u-overlayDefault {
-	position: relative;
 	color: #fff;
 
 	&:before {
@@ -22,13 +21,12 @@
 
 	&:before {
 	    background: #000;
-	    opacity: .5;
+	    opacity: .1;
 	}
 }
 
 // mixin for applying overlay at a specific breakpoint
 @mixin u-overlayDark($breakpoint) {
-	position: relative;
 
 	@include mq($from: $breakpoint) {
 		color: #fff;

@@ -10,6 +10,7 @@
 .SiteMain {
 	padding-top: 0;
 	padding-bottom: 20vh ;
+	border-bottom: 4px solid tomato;
 }
 
 .Project {
@@ -51,7 +52,7 @@
 	@extend %u-blockText;
 	color: #ccc;
 	position: relative;
-	top: -3px;
+	top: -1px;
 }
 
 .Project__link {

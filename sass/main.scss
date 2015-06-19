@@ -28,7 +28,7 @@
 @import 'global/select';
 @import 'global/table';
 @import 'global/list';
-//@import 'global/overlay';
+@import 'global/overlay';
 //@import 'global/triangle';
 
 // import components or objects
@@ -43,6 +43,7 @@
 //@import 'objects/Breadcrumbs';
 //@import 'objects/Pagination';
 //@import 'objects/ImageCredit';
+@import 'objects/Bill';
 
 
 // import specific page styles that are not reusable.

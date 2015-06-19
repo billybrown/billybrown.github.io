@@ -9,7 +9,7 @@ module.exports.tasks = {
         sourceMap: true
       },
       files: {
-        'css/main.css': 'sass/main.scss'
+        'build/css/main.css': 'sass/main.scss'
       }
     }
   },
@@ -29,7 +29,7 @@ module.exports.tasks = {
       map: true
     },
     custom: {
-      src: 'css/*.css'
+      src: 'build/css/*.css'
     }
   },
 
@@ -49,12 +49,30 @@ module.exports.tasks = {
     },
     target: {
       files: {
-        'css/main.css': ['css/main.css']
+        'build/css/main.min.css': ['build/css/main.css']
       }
     }
-  }
+  },
 
-
+  // this is buggy, removing for now
+  // csslint: {
+  //   strict: {
+  //     options: {
+  //       "outline-none": false,
+  //       "unqualified-attributes": false,
+  //       "universal-selector": false,
+  //       "star-property-hack": false,
+  //       "adjoining-classes": false,
+  //       "box-sizing": false,
+  //       "compatible-vendor-prefixes": false,
+  //       "unique-headings": false,
+  //       "bulletproof-font-face": false,
+  //       "box-model": false,
+  //       "font-sizes": false
+  //     },
+  //     src: ['build/css/main.css']
+  //   }
+  // },
   // this strips out unused css based on an html input
   // commented out for now since its a little buggy and not ready for prime time
   // uncss: {
@@ -79,6 +97,10 @@ module.exports.tasks = {
   //     src: 'build/index.html',
   //     dest: 'build/index.html'
   //   }
-  // }
+  // },
+  
+  clean: {
+    css: ['build/css/main.css']
+  }
 
 };

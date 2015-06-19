@@ -78,6 +78,16 @@ $cspace_large: 10vw;
   }
 }
 
+.PageWrapper {
+  max-width: 80vw;
+  margin: 0 auto;
+
+  @include mq($from: college) {
+    max-width: 40vw;
+    margin-left: 50vw
+  }
+}
+
 
 
 /////////////////////////////////////-+++-
