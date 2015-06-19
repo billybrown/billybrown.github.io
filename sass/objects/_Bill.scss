@@ -11,6 +11,12 @@ $bill-height: $bill;
 	bottom: 0;
 	left: 10vw;
 
+	display: none;
+
+	@include mq($from: college) {
+		display: block;
+	}
+
 	.Shirt {
 		background: #ccff97;
 	}
