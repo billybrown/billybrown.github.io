@@ -21,5 +21,16 @@ module.exports.tasks = {
           dest: 'src/img'
         }]
       }
+    },
+
+    svginjector: {
+      example: {
+        options: {
+          container: 'bill1'
+        },
+        files: {
+          'build/img/bill_1.js': ['img/bill/bill_1.svg', 'img/bill/bill_2.svg']
+        }
+      }
     }
 };

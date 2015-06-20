@@ -23,15 +23,14 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['css']);
   grunt.registerTask('css', ['sass', 'autoprefixer', 'cssmin', 'clean:css']);
   grunt.registerTask('javascript', ['clean:js_all', 'bower_concat', 'uglify', 'copy:jquery', 'copy:modernizr', 'clean:js_after']);
-  grunt.registerTask('images', ['imagemin']);
+  grunt.registerTask('images', ['imagemin', 'svginjector']);
   grunt.registerTask('sprites', ['dr-svg-sprites']);
 
   grunt.registerTask('build', [
     'clean:build',
     'css',
     'javascript',
-    'images',
-    'sprites'
+    'images'
   ]);
 };
 

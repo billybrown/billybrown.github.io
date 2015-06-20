@@ -3,10 +3,6 @@
 jQuery( document ).ready( function( $ ) {
 	"use strict";
 
-	var top = 25;
-	var bill = 20;
-	var startpush = 10;
-
 	var Engine = {
 		bill : {
 
@@ -25,6 +21,21 @@ jQuery( document ).ready( function( $ ) {
 					}, 2000);
 				});
 
+			},
+
+			breath : function() {
+
+				var breathtime = 500;
+
+					$('.Bill__1').attr("class", "Bill__1 is-hidden");
+					$('.Bill__2').attr("class", "Bill__2");
+					setTimeout(function() { 
+						$('.Bill__1').attr("class", "Bill__1");
+						$('.Bill__2').attr("class", "Bill__2 is-hidden");
+						setTimeout(function() { 
+							Engine.bill.breath(); 
+						}, breathtime);
+					}, breathtime);
 			},
 
 			move : function() {
@@ -96,7 +107,11 @@ jQuery( document ).ready( function( $ ) {
 	};
 
 	Engine.bill.init();
-	Engine.bill.move();
+	//Engine.bill.move();
 	Engine.bill.money();
+
+	setTimeout(function() {
+		Engine.bill.breath();
+	}, 2500);
 
 });
