@@ -29,7 +29,7 @@ module.exports.tasks = {
           container: 'bill1'
         },
         files: {
-          'build/img/bill_1.js': ['img/bill/bill_1.svg', 'img/bill/bill_2.svg']
+          'build/img/bill_1.js': ['img/bill/bill_1.svg', 'img/bill/bill_2.svg', 'img/bill/bill_3.svg', 'img/bill/bill_4.svg', 'img/bill/bill_5.svg', 'img/bill/bill_6.svg']
         }
       }
     }

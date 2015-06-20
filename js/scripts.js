@@ -3,6 +3,8 @@
 jQuery( document ).ready( function( $ ) {
 	"use strict";
 
+	var moving = false;
+
 	var Engine = {
 		bill : {
 
@@ -27,22 +29,31 @@ jQuery( document ).ready( function( $ ) {
 
 				var breathtime = 500;
 
+				if (moving === false) {
 					$('.Bill__1').attr("class", "Bill__1 is-hidden");
 					$('.Bill__2').attr("class", "Bill__2");
 					setTimeout(function() { 
-						$('.Bill__1').attr("class", "Bill__1");
-						$('.Bill__2').attr("class", "Bill__2 is-hidden");
-						setTimeout(function() { 
-							Engine.bill.breath(); 
-						}, breathtime);
+						if (moving === false) {
+							$('.Bill__1').attr("class", "Bill__1");
+							$('.Bill__2').attr("class", "Bill__2 is-hidden");
+							setTimeout(function() { 
+								if (moving === false) {
+									Engine.bill.breath(); 
+								}
+							}, breathtime);
+						}
 					}, breathtime);
+				}
 			},
 
 			move : function() {
 
-				var bill = 260;
+
+				var distance = 100;
+				var speed = 150;
 
 				var moveit = function(direction) {
+					moving = true;
 
 					// unbind the keydown action to prevent repeats
 					$(document).off('keydown');
@@ -51,28 +62,32 @@ jQuery( document ).ready( function( $ ) {
 					var original = parseInt($('.Bill').css("left"));
 
 					if (direction == "left") {
-						$('.Bill').css("left", original - bill);
+						$('.Bill').css("left", original - distance);
 					} else  {
-						$('.Bill').css("left", original + bill);
+						$('.Bill').css("left", original + distance);
 					}
 
-					$('.Bill').addClass("is-moveRight1");
+					$('.Bill__1').attr("class", "Bill__1 is-hidden");
+					$('.Bill__2').attr("class", "Bill__2 is-hidden");
+					$('.Bill__3').attr("class", "Bill__3");
 					setTimeout(function() { 
-						$('.Bill').removeClass("is-moveRight1");
-						$('.Bill').addClass("is-moveRight2");
+						$('.Bill__3').attr("class", "Bill__3 is-hidden");
+						$('.Bill__4').attr("class", "Bill__4");
 						setTimeout(function() { 
-							$('.Bill').removeClass("is-moveRight2");
-							$('.Bill').addClass("is-moveRight3");
+							$('.Bill__4').attr("class", "Bill__4 is-hidden");
+							$('.Bill__5').attr("class", "Bill__5");
 							setTimeout(function() { 
-								$('.Bill').removeClass("is-moveRight3");
-								$('.Bill').addClass("is-moveRight4");
+								$('.Bill__5').attr("class", "Bill__5 is-hidden");
+								$('.Bill__6').attr("class", "Bill__6");
 								setTimeout(function() { 
-									$('.Bill').removeClass("is-moveRight4");
+									$('.Bill__6').attr("class", "Bill__6 is-hidden");
+									$('.Bill__1').attr("class", "Bill__1");
 									Engine.bill.move(); 
-								}, 250);
-							}, 250);
-						}, 250);
-					}, 250);
+									moving = false;
+								}, speed);
+							}, speed);
+						}, speed);
+					}, speed);
 				};
 
 
@@ -107,7 +122,7 @@ jQuery( document ).ready( function( $ ) {
 	};
 
 	Engine.bill.init();
-	//Engine.bill.move();
+	Engine.bill.move();
 	Engine.bill.money();
 
 	setTimeout(function() {
