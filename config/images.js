@@ -23,6 +23,19 @@ module.exports.tasks = {
       }
     },
 
+    copy: {
+        images: {
+            files: [
+                { expand: true, cwd: 'img', src: ['**'], dest: 'build/img/'}
+            ]
+        },
+        favicons: {
+            files: [
+                { expand: true, cwd: 'favicons', src: ['**'], dest: 'build/'}
+            ]
+        }
+    },
+    
     svginjector: {
       example: {
         options: {

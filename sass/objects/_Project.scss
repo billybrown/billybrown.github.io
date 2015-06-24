@@ -30,6 +30,10 @@
 	margin-bottom: 0;
 	@extend %u-giantTitle;
 	padding-top: 2vh;
+
+	a {
+		color: $text;
+	}
 }
 
 .Project__date {

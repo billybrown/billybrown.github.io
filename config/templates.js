@@ -9,19 +9,19 @@ module.exports.tasks = {
 
 
   // Build HTML from templates and data
-  // assemble: {
-  //   site: {
-  //     options: {
-  //       layout: ['src/templates/layouts/default.hbs'],
-  //       partials: ['src/templates/partials/*.hbs'],
-  //       data: ['src/templates/data/*.yaml'],
-  //       flatten: true
-  //     },
-  //     files: {
-  //       '<%= dist %>/': ['src/templates/pages/*.hbs']
-  //     }
-  //   }
-  // },
+  assemble: {
+    site: {
+      options: {
+        layout: ['templates/layouts/default.hbs'],
+        partials: ['templates/partials/*.hbs'],
+        data: ['templates/data/*.yaml'],
+        flatten: true
+      },
+      files: {
+        'build/': ['templates/pages/*.hbs']
+      }
+    }
+  }
 
   // prettify: {
   //   options: {

@@ -16,6 +16,10 @@ module.exports.tasks = {
         files: ['img/*'],
         tasks: ['images']
       },
+      templates: {
+        files: ['templates/**/**'],
+        tasks: ['templates']
+      },
       // this task must come last, and it will refresh your browser (as long
       // as you have the chrome extension) whenever certain files get changed
       livereload: {

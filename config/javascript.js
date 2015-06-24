@@ -33,7 +33,7 @@ module.exports.tasks = {
     uglify: {
         my_target: {
             files: {
-              'build/js/plugins.min.js': ['build/js/plugins.js']
+              'build/js/plugins.min.js': ['build/js/plugins.js', 'js/scripts.js']
             }
         }
     },
