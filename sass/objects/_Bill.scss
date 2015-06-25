@@ -27,6 +27,60 @@ $pants: #a09087;
 /////////////////////////////////////-+++-
 // Innitial stuff
 
+/////////////////////////////////////-+++-
+// Bill blocks colors
+
+.Shirt {
+	fill: $shirt;
+}
+
+.Hair {
+	fill: $hair;
+}
+
+.Face,
+.RightArm,
+.LeftArm {
+	fill: $skin;
+}
+
+.Tie {
+	fill: $tie;
+}
+
+.Belt,
+.Shoe {
+	fill: $leather;
+}
+
+.LeftLeg,
+.RightLeg,
+.Torso {
+	fill: $pants;
+}
+
+%u-darkenPants { fill: darken($pants, 6%); }
+%u-resetPants { fill: $pants; }
+
+%u-darkenSkin {
+	fill: darken($skin, 6%);
+}
+
+%u-darkenTie {
+	fill: darken($tie, 6%);
+}
+
+%u-darkenLeather {
+	fill: darken($leather, 6%);
+}
+
+%u-darkenHair {
+	fill: darken($hair, 6%);
+}
+
+%u-darkenShirt { fill: darken(desaturate($shirt, 30%), 6%); }
+%u-resetShirt { fill: $shirt; }
+
 
 .Bill {
 	height: 100vh;
@@ -75,13 +129,13 @@ $pants: #a09087;
 
 	}
 
-	path {
+	rect {
 		transition: all 2s ease;
 	}
 
-	&.is-off path {
-		width: 1px;
+	&.is-off rect {
 		height: 1px;
+		width: 1px;
 		fill: #fff;
 	}
 
@@ -92,9 +146,11 @@ $pants: #a09087;
 	}
 }
 
+
+
 @for $i from 1 through $bill-total {
-  .Bill.is-off path:nth-child(#{$i}) { 
-    y: (random(500) + -500) + px !important;
+  .Bill.is-off rect:nth-child(#{$i}) { 
+    y: random(500) + -500 + px !important;
   }
 }
 
@@ -127,10 +183,38 @@ $pants: #a09087;
 	&.is-out {
 
 		@include mq($from: college) {
-			opacity: 1;
+			//opacity: 1;
 		}
 	}
 }
+
+
+/////////////////////////////////////-+++-
+// This brings in the sprites and orients them properlly
+// this code is totally wack ... but it works
+
+@mixin billold($x, $y) {
+	transform: translate($y * $bill, -($x * $bill));
+}
+
+@mixin bill($x, $y) {
+	x: $x;
+	y: $y;
+}
+
+.Bill {
+	@import "BillSprite";
+}
+
+
+
+// @mixin bill($x, $y) {
+// 	transform: translate(-$y * $bill, -($x * $bill));
+// }
+
+// .Bill.is-left {
+// 	//@import "BillSprite";
+// }
 
 
 
@@ -139,7 +223,7 @@ $pants: #a09087;
 
 .Bill.is-golden {
 
-	path {
+	rect {
 		fill: goldenrod !important;
 	}
 
@@ -148,6 +232,8 @@ $pants: #a09087;
     	filter: drop-shadow( 0 0 10px goldenrod );
 	}
 }
+
+
 
 
 
