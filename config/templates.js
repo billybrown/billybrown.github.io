@@ -18,7 +18,7 @@ module.exports.tasks = {
         flatten: true
       },
       files: {
-        'build/': ['templates/pages/*.hbs']
+        'index.html': ['templates/pages/*.hbs']
       }
     }
   }
