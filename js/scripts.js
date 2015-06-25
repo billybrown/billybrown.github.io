@@ -49,8 +49,8 @@ jQuery( document ).ready( function( $ ) {
 			move : function() {
 
 
-				var distance = 100;
-				var speed = 150;
+				var distance = 200;
+				var speed = 100;
 
 				var moveit = function(direction) {
 					moving = true;
@@ -69,6 +69,7 @@ jQuery( document ).ready( function( $ ) {
 
 					$('.Bill__1').attr("class", "Bill__1 is-hidden");
 					$('.Bill__2').attr("class", "Bill__2 is-hidden");
+					$('.Bill__9').attr("class", "Bill__9 is-hidden");
 					$('.Bill__3').attr("class", "Bill__3");
 					setTimeout(function() { 
 						$('.Bill__3').attr("class", "Bill__3 is-hidden");
@@ -81,9 +82,17 @@ jQuery( document ).ready( function( $ ) {
 								$('.Bill__6').attr("class", "Bill__6");
 								setTimeout(function() { 
 									$('.Bill__6').attr("class", "Bill__6 is-hidden");
-									$('.Bill__1').attr("class", "Bill__1");
-									Engine.bill.move(); 
-									moving = false;
+									$('.Bill__7').attr("class", "Bill__7");
+									setTimeout(function() { 
+										$('.Bill__7').attr("class", "Bill__7 is-hidden");
+										$('.Bill__8').attr("class", "Bill__8");
+										setTimeout(function() { 
+											$('.Bill__8').attr("class", "Bill__7 is-hidden");
+											$('.Bill__9').attr("class", "Bill__9");
+											Engine.bill.move(); 
+											moving = false;
+										}, speed);
+									}, speed);
 								}, speed);
 							}, speed);
 						}, speed);

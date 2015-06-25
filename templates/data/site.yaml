@@ -54,10 +54,10 @@ project:
     link: https://www.flickr.com/gp/billybrown00/B8qf72
     linktext: Visit Project Photos
   - title: Me Right Now
-    summary: A simple game about terriforming Mars.
+    summary: "Long, rambling videos of myself getting a haircut every year."
     date: 2007 - present
     image: haircut.gif
-    link: "Long, rambling videos of myself getting a haircut every year."
+    link: http://b.illbrown.com/merightnow/
     linktext: Visit Project Site
   - title: Jowlers.com
     summary: Shaking Faces and photographing it.

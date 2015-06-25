@@ -10,7 +10,8 @@ module.exports.tasks = {
         tasks: ['css']
       },
       js: {
-        files: ['js/scripts.js']
+        files: ['js/scripts.js'],
+        tasks: ['javascript']
       },
       images: {
         files: ['img/*'],

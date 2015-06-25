@@ -75,11 +75,11 @@ $pants: #a09087;
 
 	}
 
-	rect {
+	path {
 		transition: all 2s ease;
 	}
 
-	&.is-off rect {
+	&.is-off path {
 		width: 1px;
 		height: 1px;
 		fill: #fff;
@@ -93,7 +93,7 @@ $pants: #a09087;
 }
 
 @for $i from 1 through $bill-total {
-  .Bill.is-off rect:nth-child(#{$i}) { 
+  .Bill.is-off path:nth-child(#{$i}) { 
     y: (random(500) + -500) + px !important;
   }
 }
@@ -139,7 +139,7 @@ $pants: #a09087;
 
 .Bill.is-golden {
 
-	rect {
+	path {
 		fill: goldenrod !important;
 	}
 
