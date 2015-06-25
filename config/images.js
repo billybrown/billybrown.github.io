@@ -4,21 +4,21 @@ module.exports.tasks = {
 
     // this task optimizes your images
     imagemin: {
-      png: {
+      all: {
         files: [{
           expand: true,
-          cwd: 'src/img',
+          cwd: 'img',
           src: ['**/*.png', '**/*.jpg', '**/*.gif'],
-          dest: 'src/img'
+          dest: 'img'
         }]
       },
       svg: {
         files: [{
           expand: true,
-          cwd: 'src/img',
+          cwd: 'img',
           src: ['**/*.svg'],
           ext: '.svg',
-          dest: 'src/img'
+          dest: 'img'
         }]
       }
     },
