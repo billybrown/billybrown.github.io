@@ -50,7 +50,7 @@ jQuery( document ).ready( function( $ ) {
 
 
 				var distance = 200;
-				var speed = 300;
+				var speed = 200;
 
 				var moveit = function(direction) {
 					moving = true;
@@ -73,11 +73,8 @@ jQuery( document ).ready( function( $ ) {
 						setTimeout(function() { 
 							$('.Bill').removeClass('is-moveRight2').addClass('is-moveRight3');
 							setTimeout(function() { 
-								$('.Bill').removeClass('is-moveRight3').addClass('is-moveRight4');
-								setTimeout(function() { 
-									$('.Bill').removeClass('is-moveRight4');
-									Engine.bill.move(); 
-								}, speed);
+								$('.Bill').removeClass('is-moveRight3');
+								Engine.bill.move(); 
 							}, speed);
 						}, speed);
 					}, speed);
