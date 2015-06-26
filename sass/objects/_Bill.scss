@@ -111,9 +111,9 @@ $pants: #a09087;
 	// 	height: 1px;
 	// }
 
-	// &.is-ready div {
-	// 	transition: all .3s ease;
-	// }
+	&.is-ready rect {
+		transition: all .25s ease;
+	}
 
 	svg {
 		transition: filter 2s ease;
@@ -130,7 +130,7 @@ $pants: #a09087;
 	}
 
 	rect {
-		transition: all .2s ease;
+		transition: all 2s ease;
 		position: relative;
 		z-index: 10;
 	}
@@ -183,6 +183,7 @@ $pants: #a09087;
 
 
 	&.is-out {
+
 
 		@include mq($from: college) {
 			//opacity: 1;
