@@ -186,7 +186,7 @@ $pants: #a09087;
 
 
 		@include mq($from: college) {
-			//opacity: 1;
+			opacity: 1;
 		}
 	}
 }
@@ -232,20 +232,34 @@ $pants: #a09087;
 /////////////////////////////////////-+++-
 // here is just some fun stuff
 
-.Bill.is-golden {
+.Bill {
 
-	rect {
-		fill: goldenrod !important;
+	&.is-golden {
+
+		rect {
+			fill: black !important;
+		}
 	}
 
-	svg {
-    	-webkit-filter: drop-shadow( 0 0 10px goldenrod );
-    	filter: drop-shadow( 0 0 10px goldenrod );
+	// &.is-intense {
+	// 	rect {
+	// 		fill: tomato !important;
+	// 	}		
+	// }
+
+	&.is-explode {
+		rect {
+			fill: tomato !important;
+			y: 640;
+		}
 	}
 }
 
-
-
+@for $i from 1 through $bill-total {
+  .Bill.is-explode rect:nth-child(#{$i}) { 
+    x: random(2000) + -1000 + px !important;
+  }
+}
 
 
 
