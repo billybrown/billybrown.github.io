@@ -17,12 +17,6 @@ project:
     image: mandolin-man.gif
     link: http://b.illbrown.com/Mandolin-Man/
     linktext: Visit Project Site
-  - title: Roverdare
-    summary: A simple game about terriforming Mars.
-    date: 2013
-    image: roverdare.gif
-    link: http://b.illbrown.com/roverdare/
-    linktext: Visit Project Site
   - title: Pixelated News
     summary: Pixelated photographs of unrest in the middle east.
     date: 2011
