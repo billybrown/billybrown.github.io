@@ -18,6 +18,8 @@
 .Project__imageGroup {
 	width: 140px;
 	margin: 0 auto;
+	position: relative;
+	z-index: 10;
 
 	@include mq($from: middleschool) {
 		margin: 0 0 0 30px;
