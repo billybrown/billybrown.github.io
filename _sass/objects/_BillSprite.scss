@@ -1,0 +1,817 @@
+
+
+/////////////////////////////////////-+++-
+
+// @mixin bill($x, $y) {
+
+// 	@if $BillRight == true {
+// 		transform: translate($y * $bill, -($x * $bill));
+// 	} @else {
+// 		//transform: translate($x * $bill, -($y * $bill));
+// 	}
+// }
+
+// Innitial resting position of bill bocks
+
+& {
+
+.Hair--1 		{ @include bill(-360, 160);}
+.Hair--2 		{ @include bill(-380, 180);}
+.Hair--3 		{ @include bill(-360, 180);}
+.Hair--4 		{ @include bill(-340, 180);}
+
+.Face--1 		{ @include bill(-380, 200); @extend %u-darkenSkin;}
+.Face--2 		{ @include bill(-360, 200); @extend %u-darkenSkin;}
+.Face--3 		{ @include bill(-340, 200); @extend %u-darkenSkin;}
+.Face--4 		{ @include bill(-380, 220);}
+.Face--5 		{ @include bill(-360, 220);}
+.Face--6 		{ @include bill(-340, 220);}
+.Face--7 		{ @include bill(-380, 240);}
+.Face--8 		{ @include bill(-360, 240);}
+.Face--9 		{ @include bill(-340, 240);}
+
+.Shirt--1 		{ @include bill(-400, 240); @extend %u-darkenShirt;}
+
+.Shirt--2 		{ @include bill(-320, 260);}
+.Shirt--3 		{ @include bill(-340, 260); @extend %u-darkenShirt;}
+.Shirt--4 		{ @include bill(-380, 260); @extend %u-darkenShirt;}
+.Shirt--5 		{ @include bill(-400, 260);}
+.Shirt--6 		{ @include bill(-420, 260); @extend %u-darkenShirt;}
+
+.Shirt--7 		{ @include bill(-300, 280);}
+.Shirt--8 		{ @include bill(-320, 280);}
+.Shirt--9 		{ @include bill(-340, 280);}
+.Shirt--10 		{ @include bill(-380, 280);}
+.Shirt--11 		{ @include bill(-400, 280);}
+.Shirt--12 		{ @include bill(-420, 280);}
+.Shirt--13 		{ @include bill(-440, 280); @extend %u-darkenShirt;}
+
+.Shirt--14 		{ @include bill(-300, 300);}
+.Shirt--15 		{ @include bill(-320, 300);}
+.Shirt--16 		{ @include bill(-340, 300);}
+.Shirt--17 		{ @include bill(-380, 300);}
+.Shirt--18 		{ @include bill(-400, 300);}
+.Shirt--19 		{ @include bill(-420, 300);}
+.Shirt--20 		{ @include bill(-440, 300); @extend %u-darkenShirt;}
+
+.Shirt--21 		{ @include bill(-300, 320);}
+.Shirt--22 		{ @include bill(-320, 320); @extend %u-darkenShirt;}
+.Shirt--23 		{ @include bill(-340, 320);}
+.Shirt--24 		{ @include bill(-380, 320);}
+.Shirt--25 		{ @include bill(-400, 320);}
+.Shirt--26 		{ @include bill(-420, 320);}
+.Shirt--27 		{ @include bill(-440, 320); @extend %u-darkenShirt;}
+
+.Shirt--28 		{ @include bill(-400, 340);}
+.Shirt--29 		{ @include bill(-420, 340);}
+
+.Shirt--30 		{ @include bill(-320, 340);  @extend %u-darkenShirt;}
+.Shirt--31 		{ @include bill(-380, 340);}
+.Shirt--32 		{ @include bill(-340, 340);}
+
+.Shirt--33 		{ @include bill(-320, 360); @extend %u-darkenShirt;}
+.Shirt--34 		{ @include bill(-340, 360);}
+.Shirt--35 		{ @include bill(-380, 360);}
+.Shirt--36 		{ @include bill(-400, 360);}
+.Shirt--37 		{ @include bill(-420, 360);}
+
+.Shirt--38 		{ @include bill(-320, 380); @extend %u-darkenShirt;}
+.Shirt--39 		{ @include bill(-340, 380);}
+.Shirt--40 		{ @include bill(-380, 380);}
+.Shirt--41 		{ @include bill(-400, 380);}
+.Shirt--42 		{ @include bill(-420, 380);}
+
+.Shirt--43 		{ @include bill(-320, 400); @extend %u-darkenShirt;}
+.Shirt--44 		{ @include bill(-340, 400);}
+.Shirt--45 		{ @include bill(-360, 400); @extend %u-darkenShirt;}
+.Shirt--46 		{ @include bill(-380, 400);}
+.Shirt--47 		{ @include bill(-400, 400);}
+.Shirt--48 		{ @include bill(-420, 400);}
+
+.Tie--1 		{ @include bill(-360, 260); @extend %u-darkenTie;}
+.Tie--2 		{ @include bill(-360, 280);}
+.Tie--3 		{ @include bill(-360, 300);}
+.Tie--4 		{ @include bill(-360, 320);}
+.Tie--5 		{ @include bill(-360, 340);}
+.Tie--6 		{ @include bill(-360, 360);}
+.Tie--7 		{ @include bill(-360, 380);}
+
+.LeftArm--1 	{ @include bill(-300, 340);}
+.LeftArm--2 	{ @include bill(-300, 360);}
+.LeftArm--3 	{ @include bill(-300, 380);}
+.LeftArm--4 	{ @include bill(-300, 400);}
+.LeftArm--5 	{ @include bill(-300, 420);}
+.LeftArm--6 	{ @include bill(-300, 440);}
+
+.RightArm--1 	{ @include bill(-440, 340); @extend %u-darkenSkin;}
+.RightArm--2 	{ @include bill(-440, 360); @extend %u-darkenSkin;}
+.RightArm--3 	{ @include bill(-440, 380); @extend %u-darkenSkin;}
+.RightArm--4 	{ @include bill(-440, 400); @extend %u-darkenSkin;}
+.RightArm--5 	{ @include bill(-440, 420); @extend %u-darkenSkin;}
+.RightArm--6 	{ @include bill(-440, 440); @extend %u-darkenSkin;}
+
+.Belt--1 		{ @include bill(-320, 420);}
+.Belt--2 		{ @include bill(-340, 420);}
+.Belt--3 		{ @include bill(-360, 420);}
+.Belt--4 		{ @include bill(-380, 420);}
+.Belt--5 		{ @include bill(-400, 420);}
+.Belt--6 		{ @include bill(-420, 420);}
+
+.Torso--1 		{ @include bill(-320, 440);}
+.Torso--2 		{ @include bill(-340, 440);}
+.Torso--3 		{ @include bill(-360, 440);}
+.Torso--4 		{ @include bill(-380, 440);}
+.Torso--5 		{ @include bill(-400, 440);}
+.Torso--6 		{ @include bill(-420, 440);}
+
+.Torso--7 		{ @include bill(-320, 460);}
+.Torso--8 		{ @include bill(-340, 460); @extend %u-darkenPants;}
+.Torso--9 		{ @include bill(-360, 460); @extend %u-darkenPants;}
+.Torso--10 		{ @include bill(-380, 460); @extend %u-darkenPants;}
+.Torso--11 		{ @include bill(-400, 460); @extend %u-darkenPants;}
+.Torso--12 		{ @include bill(-420, 460);}
+.Torso--13 		{ @include bill(-440, 460); @extend %u-darkenPants;}
+
+.RightLeg--1 	{ @include bill(-420, 480);}
+.RightLeg--2 	{ @include bill(-440, 480); @extend %u-darkenPants;}
+.RightLeg--3 	{ @include bill(-420, 500);}
+.RightLeg--4 	{ @include bill(-440, 500); @extend %u-darkenPants;}
+.RightLeg--5 	{ @include bill(-420, 520);}
+.RightLeg--6 	{ @include bill(-440, 520); @extend %u-darkenPants;}
+.RightLeg--7 	{ @include bill(-420, 540);}
+.RightLeg--8 	{ @include bill(-440, 540); @extend %u-darkenPants;}
+.RightLeg--9 	{ @include bill(-420, 560);}
+.RightLeg--10 	{ @include bill(-440, 560); @extend %u-darkenPants;}
+.RightLeg--11 	{ @include bill(-420, 580);}
+.RightLeg--12 	{ @include bill(-440, 580); @extend %u-darkenPants;}
+.RightLeg--13 	{ @include bill(-420, 600);}
+.RightLeg--14 	{ @include bill(-440, 600); @extend %u-darkenPants;}
+.RightLeg--15 	{ @include bill(-420, 620);}
+.RightLeg--16 	{ @include bill(-440, 620); @extend %u-darkenPants;}
+
+.LeftLeg--1 	{ @include bill(-320, 480);}
+.LeftLeg--2 	{ @include bill(-340, 480); @extend %u-darkenPants;}
+.LeftLeg--3 	{ @include bill(-320, 500);}
+.LeftLeg--4 	{ @include bill(-340, 500); @extend %u-darkenPants;}
+.LeftLeg--5 	{ @include bill(-320, 520);}
+.LeftLeg--6 	{ @include bill(-340, 520); @extend %u-darkenPants;}
+.LeftLeg--7 	{ @include bill(-320, 540);}
+.LeftLeg--8 	{ @include bill(-340, 540); @extend %u-darkenPants;}
+.LeftLeg--9 	{ @include bill(-320, 560);}
+.LeftLeg--10 	{ @include bill(-340, 560); @extend %u-darkenPants;}
+.LeftLeg--11 	{ @include bill(-320, 580);}
+.LeftLeg--12 	{ @include bill(-340, 580); @extend %u-darkenPants;}
+.LeftLeg--13 	{ @include bill(-320, 600);}
+.LeftLeg--14 	{ @include bill(-340, 600); @extend %u-darkenPants;}
+.LeftLeg--15 	{ @include bill(-320, 620);}
+.LeftLeg--16 	{ @include bill(-340, 620); @extend %u-darkenPants;}
+
+.Shoe--1 		{ @include bill(-320, 640);}
+.Shoe--2 		{ @include bill(-340, 640);}
+.Shoe--3 		{ @include bill(-420, 640);}
+.Shoe--4 		{ @include bill(-440, 640);}
+
+}
+
+/////////////////////////////////////-+++-
+// Move bill right and things do this.
+
+
+&.is-moveRight1 {
+
+.Shirt--7,
+.Shirt--14,
+.Shirt--21,
+.LeftArm--1,
+.LeftArm--2,
+.LeftArm--3,
+.LeftArm--4,
+.LeftArm--5,
+.LeftArm--6 	{ @include billx(-340);}
+
+
+.Tie--1,
+.Tie--2,
+.Tie--3,
+.Tie--4,
+.Tie--5,
+.Tie--6,
+.Tie--7 		{ @include billx(-340);}
+
+
+.Shirt--22,
+.Shirt--30,
+.Shirt--33,
+.Shirt--38,
+.Shirt--45 		{ @extend %u-resetShirt;}
+
+
+.Shirt--3,
+.Shirt--9,
+.Shirt--16,
+.Shirt--23,
+.Shirt--32,
+.Shirt--34,
+.Shirt--39,
+.Shirt--44 		{ @include billx(-360);}
+
+
+.Shirt--2,
+.Shirt--8,
+.Shirt--15,
+.Shirt--22,
+.Shirt--30,
+.Shirt--33,
+.Shirt--38,
+.Shirt--43,
+.Belt--1,
+.Torso--1,
+.Torso--7,
+.LeftLeg--1,
+.LeftLeg--3,
+.LeftLeg--5,
+.LeftLeg--7,
+.LeftLeg--9,
+.LeftLeg--11,
+.LeftLeg--13	{ @include billx(-340);}
+.LeftLeg--15,
+.Shoe--1		{ @include billx(-360);}		
+
+.Belt--2,
+.Torso--2,
+.Torso--8,
+.LeftLeg--2,
+.LeftLeg--4,
+.LeftLeg--6,
+.LeftLeg--8,
+.LeftLeg--10,
+.LeftLeg--12,
+.LeftLeg--14 { @include billx(-360);}
+.LeftLeg--16,
+.Shoe--2		{ @include billx(-380);}	
+
+
+
+.RightArm--1,
+.RightArm--2,
+.RightArm--3,
+.RightArm--4,
+.RightArm--5,
+.RightArm--6,
+.Shirt--27,
+.Shirt--20,
+.Shirt--13		{@include billx(-380);}
+
+.Shirt--6 		{@include billy(280);}
+
+.Shirt--5,
+.Shirt--6,
+.Shirt--11,
+.Shirt--12,
+.Shirt--18,
+.Shirt--19,
+.Shirt--26,
+.Shirt--25,
+.Shirt--28,
+.Shirt--29,
+.Shirt--36,
+.Shirt--37,
+.Shirt--41,
+.Shirt--42,
+.Shirt--47,
+.Shirt--48		{@extend %u-darkenShirt;}
+
+.Torso--5,
+.Torso--6,
+.RightLeg 		{ @extend %u-darkenPants;}
+
+.Torso--13 		{@include billx(-420);}
+
+.RightLeg--1	{@include billx(-380);}	
+.RightLeg--2	{@include billx(-400);}	
+
+.RightLeg--3	{@include billx(-360);}	
+.RightLeg--4	{@include bill(-340, 480);}	
+.RightLeg--5	{@include bill(-380, 500);}	
+.RightLeg--6	{@include bill(-340, 500);}	
+.RightLeg--7	{@include bill(-380, 520);}	
+.RightLeg--8	{@include bill(-340, 520);}	
+.RightLeg--9	{@include bill(-360, 540);}
+.RightLeg--10	{@include bill(-380, 540);}
+.RightLeg--11	{@include bill(-360, 540);}
+.RightLeg--12	{@include bill(-380, 540);}
+.RightLeg--13	{@include bill(-380, 540);}
+.RightLeg--14	{@include bill(-380, 540);}
+.RightLeg--15	{@include bill(-400, 560);}
+.RightLeg--16	{@include bill(-400, 540);}
+
+.Shoe--4		{@include bill(-420, 560);}
+.Shoe--3		{@include bill(-420, 580);}
+
+}
+
+
+
+/////////////////////////////////////-+++-
+// Move bill right second sprite
+
+
+&.is-moveRight2 { 
+
+.Face--4,
+.Face--5,
+.Face--7,
+.Face--8 		{ @extend %u-darkenSkin;}
+
+.Shirt--7 	{ @include bill(-440, 360);}
+.Shirt--14 	{ @include bill(-440, 380);}
+.Shirt--21 	{ @include bill(-440, 400);}
+
+.LeftArm--1,
+.LeftArm--2,
+.LeftArm--3,
+.LeftArm--4,
+.LeftArm--5,
+.LeftArm--6 	{ @include billx(-370);}
+
+
+.Tie--1 		{ @include billx(-340);}
+.Tie--2,
+.Tie--3,
+.Tie--4,
+.Tie--5,
+.Tie--6,
+.Tie--7 		{ @include billx(-320);}
+
+
+.Shirt 			{@extend %u-darkenShirt;}
+
+.Shirt--8,
+.Shirt--9,
+.Shirt--13,
+.Shirt--15,
+.Shirt--20,
+.Shirt--22,
+.Shirt--23,
+.Shirt--27,
+.Shirt--30,
+.Shirt--33,
+.Shirt--38
+ 			{@extend %u-resetShirt;}
+.Shirt--3,
+.Shirt--9,
+.Shirt--16,
+.Shirt--23,
+.Shirt--32,
+.Shirt--34,
+.Shirt--39,
+.Shirt--44 		{ @include billx(-360);}
+
+
+.Shirt--12		{@include billy(260);}
+.Shirt--2,
+.Shirt--8,
+.Shirt--15,
+.Shirt--22,
+.Shirt--30,
+.Shirt--33,
+.Shirt--38,
+.Shirt--43	{ @include billx(-340);}
+
+.Belt--1,
+.Torso--1,
+.Torso--7,
+.LeftLeg--1,
+.LeftLeg--3,
+.LeftLeg--5,
+.LeftLeg--7	{ @include billx(-440);}
+.LeftLeg--9,
+.LeftLeg--11,
+.LeftLeg--13	{ @include billx(-460);}
+
+.LeftLeg--15	{ @include bill(-460, 580);}	
+.Shoe--1		{ @include bill(-480, 600);}		
+.Shoe--2		{ @include bill(-480, 620);}		
+
+.Belt--2,
+.Torso--2,
+.Torso--8,
+.LeftLeg--2,
+.LeftLeg--4,
+.LeftLeg--6,
+.LeftLeg--8		{ @include billx(-420);}
+.LeftLeg--10,
+.LeftLeg--12 	{ @include billx(-440);}
+.LeftLeg--14	{ @include bill(-440, 580);}
+.LeftLeg--16 	{ @include bill(-440, 580);}
+
+.LeftLeg {@extend %u-darkenPants;}
+
+
+.RightArm--1,
+.RightArm--2,
+.RightArm--3,
+.Shirt--27,
+.Shirt--20,
+.Shirt--13		{@include billx(-360);}
+
+.RightArm--4		{@include bill(-360, 380);}
+.RightArm--5		{@include bill(-340, 400);}
+.RightArm--6		{@include bill(-340, 420);}
+
+.Shirt--6 		{@include billy(280);}
+
+
+
+.Torso--1,
+.Torso--12,
+.RightLeg--1,
+.RightLeg--3,
+.RightLeg--5,
+.RightLeg--7,
+.RightLeg--9,
+.RightLeg--11,
+.RightLeg--13,
+.RightLeg--15,
+.Shoe--3
+	{@include billx(-360);}
+
+.Torso--3 {@include billx(-440);}
+.Torso--3,
+.Torso--4,
+.Torso--5,
+.Torso--6,
+.Torso--7,
+.Torso--12,
+.Torso--1,
+.RightLeg--1,
+.RightLeg--3,
+.RightLeg--5,
+.RightLeg--7,
+.RightLeg--9,
+.RightLeg--11,
+.RightLeg--13,
+.RightLeg--15 {@extend %u-darkenPants;}
+
+.Torso--2,
+.Torso--13,
+.RightLeg--2,
+.RightLeg--4,
+.RightLeg--6,
+.RightLeg--8,
+.RightLeg--10,
+.RightLeg--12,
+.RightLeg--14,
+.RightLeg--16,
+.Shoe--4
+	{@include billx(-340);}
+
+.Torso--13,
+.RightLeg--2,
+.RightLeg--4,
+.RightLeg--6,
+.RightLeg--8,
+.RightLeg--10,
+.RightLeg--12,
+.RightLeg--14,
+.RightLeg--16 {@extend %u-resetPants;}
+
+
+}
+
+
+/////////////////////////////////////-+++-
+// Move bill right third sprite
+
+
+&.is-moveRight3 { 
+
+.Face--4,
+.Face--7 {@extend %u-darkenSkin;}
+.Shirt--7,
+.Shirt--14,
+.Shirt--21,
+.LeftArm--1,
+.LeftArm--2,
+.LeftArm--3,
+.LeftArm--4,
+.LeftArm--5,
+.LeftArm--6 	{ @include billx(-340);}
+
+
+.Tie--1,
+.Tie--2,
+.Tie--3,
+.Tie--4,
+.Tie--5,
+.Tie--6,
+.Tie--7 		{ @include billx(-340);}
+
+
+.Shirt--22,
+.Shirt--30,
+.Shirt--33,
+.Shirt--38,
+.Shirt--45 		{ @extend %u-resetShirt;}
+
+
+.Shirt--3,
+.Shirt--9,
+.Shirt--16,
+.Shirt--23,
+.Shirt--32,
+.Shirt--34,
+.Shirt--39,
+.Shirt--44 		{ @include billx(-360);}
+
+
+.Shirt--2,
+.Shirt--8,
+.Shirt--15,
+.Shirt--22,
+.Shirt--30,
+.Shirt--33,
+.Shirt--38,
+.Shirt--43{ @include billx(-340);}
+
+
+.RightArm--1,
+.RightArm--2,
+.RightArm--3,
+.RightArm--4,
+.RightArm--5,
+.RightArm--6,
+.Shirt--27,
+.Shirt--20,
+.Shirt--13		{@include billx(-380);}
+
+.Shirt--6 		{@include billy(280);}
+
+.Shirt--5,
+.Shirt--6,
+.Shirt--11,
+.Shirt--12,
+.Shirt--18,
+.Shirt--19,
+.Shirt--26,
+.Shirt--25,
+.Shirt--28,
+.Shirt--29,
+.Shirt--36,
+.Shirt--37,
+.Shirt--41,
+.Shirt--42,
+.Shirt--47,
+.Shirt--48		{@extend %u-darkenShirt;}
+
+.Torso--1,
+.Torso--12,
+.RightLeg--1,
+.RightLeg--3,
+.RightLeg--5,
+.RightLeg--7,
+.RightLeg--9,
+.RightLeg--11,
+.RightLeg--13,
+.RightLeg--15,
+.Shoe--3
+	{@include billx(-400);}
+
+.Torso--3 {@include billx(-420);}
+
+.Torso--3,
+.Torso--4,
+.Torso--5,
+.Torso--6,
+.Torso--7,
+.Torso--12,
+.Torso--1,
+.RightLeg--1,
+.RightLeg--3,
+.RightLeg--5,
+.RightLeg--7,
+.RightLeg--9,
+.RightLeg--11,
+.RightLeg--13,
+.RightLeg--15 {@extend %u-darkenPants;}
+
+.Torso--2,
+.Torso--13,
+.RightLeg--2,
+.RightLeg--4,
+.RightLeg--6,
+.RightLeg--8,
+.RightLeg--10,
+.RightLeg--12,
+.RightLeg--14,
+.RightLeg--16,
+.Shoe--4
+	{@include billx(-380);}
+
+.Torso--1,
+.Torso--7,
+.Torso--9,
+.Torso--13,
+.RightLeg--2,
+.RightLeg--4,
+.RightLeg--6,
+.RightLeg--8,
+.RightLeg--10,
+.RightLeg--12,
+.RightLeg--14,
+.RightLeg--16 {@extend %u-resetPants;}
+
+.Belt--1,
+.Torso--1,
+.Torso--7,
+.LeftLeg--1,
+.LeftLeg--3,
+.LeftLeg--5,
+.LeftLeg--7	{ @include billx(-360);}
+.LeftLeg--9,
+.LeftLeg--11,
+.LeftLeg--13	{ @include billx(-400);}
+
+.LeftLeg--15	{ @include bill(-400, 580);}	
+.Shoe--1		{ @include bill(-420, 560);}		
+.Shoe--2		{ @include bill(-420, 580);}		
+
+.Belt--2,
+.Torso--2,
+.Torso--8,
+.LeftLeg--2,
+.LeftLeg--4,
+.LeftLeg--6		{ @include billx(-340);}
+.LeftLeg--8		{ @include bill(-340, 520);}
+.LeftLeg--10,
+.LeftLeg--12 	{ @include billx(-400);}
+.LeftLeg--14	{ @include bill(-400, 540);}
+.LeftLeg--16 	{ @include bill(-400, 540);}
+
+.LeftLeg {@extend %u-darkenPants;}
+
+
+}
+
+
+/////////////////////////////////////-+++-
+// Move bill right fourth sprite
+
+
+&.is-jumping { 
+
+.Hair--1 {@include bill(-360, 0);}
+.Hair--2 {@include bill(-380, 20);}
+.Hair--3 {@include bill(-360, 20);}
+.Hair--4 {@include bill(-340, 20);}
+
+.Face--1 {@include bill(-380, 40);}
+.Face--2 {@include bill(-360, 40);}
+.Face--3 {@include bill(-340, 40);}
+.Face--4 {@include bill(-380, 60);}
+.Face--5 {@include bill(-360, 60);}
+.Face--6 {@include bill(-340, 60);}
+.Face--7 {@include bill(-380, 80);}
+.Face--8 {@include bill(-360, 80);}
+.Face--9 {@include bill(-340, 80);}
+
+.Shirt--1 {@include bill(-400, 80);}
+.Shirt--2 {@include bill(-320, 80);}
+.Shirt--3 {@include bill(-320, 100);}
+.Shirt--4 {@include bill(-360, 100);}
+.Shirt--5 {@include bill(-380, 100);}
+.Shirt--6 {@include bill(-400, 100);}
+.Shirt--7 {@include bill(-320, 120);}
+.Shirt--8 {@include bill(-340, 120);}
+.Shirt--9 {@include bill(-360, 120);}
+.Shirt--10 {@include bill(-380, 120);}
+.Shirt--11 {@include bill(-400, 120);}
+.Shirt--12 {@include bill(-420, 120);}
+.Shirt--13 {@include bill(-420, 100);}
+.Shirt--14 {@include bill(-320, 140);}
+.Shirt--15 {@include bill(-340, 140);}
+.Shirt--16 {@include bill(-360, 140);}
+.Shirt--17 {@include bill(-380, 140);}
+.Shirt--18 {@include bill(-400, 140);}
+.Shirt--19 {@include bill(-420, 140);}
+.Shirt--20 {@include bill(-440, 120);}
+.Shirt--21 {@include bill(-320, 160);}
+.Shirt--22 {@include bill(-340, 160);}
+.Shirt--23 {@include bill(-360, 160);}
+.Shirt--24 {@include bill(-380, 160);}
+.Shirt--25 {@include bill(-400, 160);}
+.Shirt--26 {@include bill(-420, 160);}
+.Shirt--27 {@include bill(-440, 140);}
+
+.Shirt--30 {@include bill(-340, 180);}
+.Shirt--32 {@include bill(-360, 180);}
+.Shirt--31 {@include bill(-380, 180);}
+.Shirt--28 {@include bill(-400, 180);}
+.Shirt--29 {@include bill(-420, 180);}
+
+.Shirt--33 {@include bill(-340, 200);}
+.Shirt--34 {@include bill(-360, 200);}
+.Shirt--35 {@include bill(-380, 200);}
+.Shirt--36 {@include bill(-400, 200);}
+.Shirt--37 {@include bill(-420, 200);}
+
+.Shirt--38 {@include bill(-340, 200);}
+.Shirt--39 {@include bill(-360, 200);}
+.Shirt--40 {@include bill(-380, 200);}
+.Shirt--41 {@include bill(-400, 200);}
+.Shirt--42 {@include bill(-420, 200);}
+
+.Shirt--43 {@include bill(-340, 220);}
+.Shirt--44 {@include bill(-360, 220);}
+.Shirt--45 {@include bill(-380, 220);}
+.Shirt--46 {@include bill(-400, 220);}
+.Shirt--47 {@include bill(-420, 220);}
+.Shirt--48 {@include bill(-420, 220);}
+
+.Tie--1 {@include bill(-340, 100);}
+.Tie--2 {@include bill(-340, 120);}
+.Tie--3 {@include bill(-340, 140);}
+.Tie--4 {@include bill(-340, 160);}
+.Tie--5 {@include bill(-340, 160);}
+.Tie--6 {@include bill(-320, 180);}
+.Tie--7 {@include bill(-320, 200);}
+
+
+.RightArm--1 {@include bill(-440, 160);}
+.RightArm--2 {@include bill(-440, 180);}
+.RightArm--3 {@include bill(-440, 200);}
+.RightArm--4 {@include bill(-420, 200);}
+.RightArm--5 {@include bill(-400, 200);}
+.RightArm--6 {@include bill(-380, 200);}
+
+.LeftArm--1 {@include bill(-330, 160);}
+.LeftArm--2 {@include bill(-330, 180);}
+.LeftArm--3 {@include bill(-330, 200);}
+.LeftArm--4 {@include bill(-310, 200);}
+.LeftArm--5 {@include bill(-290, 200);}
+.LeftArm--6 {@include bill(-270, 200);}
+
+
+.Belt--1 {@include bill(-340, 240);}
+.Belt--2 {@include bill(-340, 240);}
+.Belt--3 {@include bill(-360, 240);}
+.Belt--4 {@include bill(-380, 240);}
+.Belt--5 {@include bill(-400, 240);}
+.Belt--6 {@include bill(-420, 240);}
+
+.Torso {@extend %u-darkenPants;}
+.Torso--1 {@include bill(-340, 260);}
+.Torso--2 {@include bill(-340, 260);}
+.Torso--3 {@include bill(-360, 260);}
+.Torso--4 {@include bill(-380, 260);}
+.Torso--5 {@include bill(-400, 260);}
+.Torso--6 {@include bill(-420, 260);}
+
+.Torso--7  {@include bill(-340, 280);}
+.Torso--8  {@include bill(-340, 280);}
+.Torso--9  {@include bill(-360, 280);}
+.Torso--10 {@include bill(-380, 280);}
+.Torso--11 {@include bill(-400, 280);}
+.Torso--12 {@include bill(-420, 280);}
+.Torso--13 {@include bill(-420, 280);}
+
+.LeftLeg--1 {@include bill(-320, 260);}
+.LeftLeg--2 {@include bill(-320, 280);}
+.LeftLeg--3 {@include bill(-320, 280);}
+.LeftLeg--4 {@include bill(-340, 300);}
+.LeftLeg--5 {@include bill(-300, 300);}
+.LeftLeg--6 {@include bill(-320, 300);}
+.LeftLeg--7 {@include bill(-300, 320);}
+.LeftLeg--8 {@include bill(-320, 320);}
+.LeftLeg--9 {@include bill(-300, 340);}
+.LeftLeg--10 {@include bill(-320, 340);}
+.LeftLeg--11 {@include bill(-300, 360);}
+.LeftLeg--12 {@include bill(-320, 360);}
+.LeftLeg--13 {@include bill(-320, 380);}
+.LeftLeg--14 {@include bill(-340, 380);}
+.LeftLeg--15 {@include bill(-320, 400);}
+.LeftLeg--16 {@include bill(-340, 400);}
+.Shoe--1 {@include bill(-340, 420);}
+.Shoe--2 {@include bill(-360, 420);}
+
+.RightLeg--1 {@include bill(-400, 300);}
+.RightLeg--2 {@include bill(-380, 300);}
+.RightLeg--3 {@include bill(-400, 320);}
+.RightLeg--4 {@include bill(-380, 320);}
+.RightLeg--5 {@include bill(-380, 340);}
+.RightLeg--6 {@include bill(-360, 340);}
+.RightLeg--7 {@include bill(-380, 340);}
+.RightLeg--8 {@include bill(-360, 340);}
+.RightLeg--9 {@include bill(-400, 360);}
+.RightLeg--10 {@include bill(-380, 360);}
+.RightLeg--11 {@include bill(-400, 380);}
+.RightLeg--12 {@include bill(-380, 380);}
+.RightLeg--13 {@include bill(-420, 400);}
+.RightLeg--14 {@include bill(-400, 400);}
+.RightLeg--15 {@include bill(-440, 420);}
+.RightLeg--16 {@include bill(-420, 420);}
+.Shoe--3 {@include bill(-460, 440);}
+.Shoe--4 {@include bill(-440, 440);}
+
+}
+
