@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hey, I'm Bill.</title>
+    <description>The website of New Orleans based artist, web designer and front-end developer Bill Brown.</description>
+    <link>http://b.illbrown.com/</link>
+    <atom:link href="http://b.illbrown.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 12 Nov 2018 22:40:36 -0500</pubDate>
+    <lastBuildDate>Mon, 12 Nov 2018 22:40:36 -0500</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Collages</title>
+        <description>
+</description>
+        <pubDate>Sun, 01 Feb 2015 13:00:00 -0500</pubDate>
+        <link>http://b.illbrown.com/2015/02/01/collages.html</link>
+        <guid isPermaLink="true">http://b.illbrown.com/2015/02/01/collages.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Roverdare</title>
+        <description>
+</description>
+        <pubDate>Wed, 01 Jan 2014 13:00:00 -0500</pubDate>
+        <link>http://b.illbrown.com/2014/01/01/roverdare.html</link>
+        <guid isPermaLink="true">http://b.illbrown.com/2014/01/01/roverdare.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Mandolin Game</title>
+        <description>
+</description>
+        <pubDate>Tue, 01 Jan 2013 13:00:00 -0500</pubDate>
+        <link>http://b.illbrown.com/2013/01/01/mandolin.html</link>
+        <guid isPermaLink="true">http://b.illbrown.com/2013/01/01/mandolin.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Pixelated News</title>
+        <description>
+</description>
+        <pubDate>Fri, 01 Apr 2011 14:00:00 -0400</pubDate>
+        <link>http://b.illbrown.com/2011/04/01/pixelated-news.html</link>
+        <guid isPermaLink="true">http://b.illbrown.com/2011/04/01/pixelated-news.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Rock, Paper, Scissors</title>
+        <description>
+</description>
+        <pubDate>Tue, 01 Mar 2011 13:00:00 -0500</pubDate>
+        <link>http://b.illbrown.com/2011/03/01/rps.html</link>
+        <guid isPermaLink="true">http://b.illbrown.com/2011/03/01/rps.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>New Orleans Homes</title>
+        <description>
+</description>
+        <pubDate>Tue, 01 Feb 2011 13:00:00 -0500</pubDate>
+        <link>http://b.illbrown.com/2011/02/01/new-orleans-homes.html</link>
+        <guid isPermaLink="true">http://b.illbrown.com/2011/02/01/new-orleans-homes.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Camera Collection</title>
+        <description>
+</description>
+        <pubDate>Sat, 01 Jan 2011 13:00:00 -0500</pubDate>
+        <link>http://b.illbrown.com/2011/01/01/camera-collection.html</link>
+        <guid isPermaLink="true">http://b.illbrown.com/2011/01/01/camera-collection.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Me Right Now</title>
+        <description>
+</description>
+        <pubDate>Fri, 01 Jan 2010 13:00:00 -0500</pubDate>
+        <link>http://b.illbrown.com/2010/01/01/me-right-now.html</link>
+        <guid isPermaLink="true">http://b.illbrown.com/2010/01/01/me-right-now.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Elsewhere Artist Collaborative</title>
+        <description>
+</description>
+        <pubDate>Thu, 01 Jan 2009 13:00:00 -0500</pubDate>
+        <link>http://b.illbrown.com/2009/01/01/elsewhere.html</link>
+        <guid isPermaLink="true">http://b.illbrown.com/2009/01/01/elsewhere.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Jowlers.com</title>
+        <description>
+</description>
+        <pubDate>Fri, 01 Feb 2008 13:00:00 -0500</pubDate>
+        <link>http://b.illbrown.com/2008/02/01/jowlers.html</link>
+        <guid isPermaLink="true">http://b.illbrown.com/2008/02/01/jowlers.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
